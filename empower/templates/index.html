@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empower Skills</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}" />
+
+  <script src="https://kit.fontawesome.com/82db775624.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav_links">
+        <img src="{% static 'empower/images/symbol.png' %}" alt="Empower skills" />
+        <li class="new"><a href="/">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about-us">About us</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="edit/prof">Hello, {{user.first_name}}</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {% else %}
+        <li><a href="reg/sign">Sign up</a></li>
+        <li><a href="/login">Login</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <img src="https://source.unsplash.com/1500x800/?carpenter" class="working" alt="working people" />
+  </div class="new-container">
+  <div>
+    <ul id="service" class="Service-container">
+      <li>
+        <a href="carpenter/car">
+          <img class="carpenter" src="{% static 'empower/images/carpenter.png' %}" alt="carpenter" />
+        </a>
+        <p class="cards-services">CARPENTER</p>
+      </li>
+      <li>
+        <a href="plumber/plum">
+          <img class="plumber" src="{% static 'empower/images/plumber.png' %}" alt="plumber" />
+        </a>
+        <p class="cards-services">PLUMBER</p>
+      </li>
+      <li>
+        <a href="electrician/elec">
+          <img class="electrician" src="{% static 'empower/images/electro.png' %}" alt="electrician" />
+        </a>
+        <p class="cards-services">ELECTRICIAN</p>
+      </li>
+    </ul>
+  </div>
+  <div id="about-us" class="aboutus">
+    <img class="about-img" src="{% static 'empower/images/aboutus.png' %}" alt="about-us" />
+    <h1 class="About-us">About US</h1>
+    <p class="para">
+      Empower Skills is a website which allows the customers to meet new
+      service providers and the service providers to find new clients.
+    </p>
+  </div>
+  <footer class="footer">
+    <p class="copyright">Copyrights &copy; Empower Skills</p>
+  </footer>
+</body>
+
+</html>

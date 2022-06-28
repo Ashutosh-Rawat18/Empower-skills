@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Register as</h1>
+        <!-- <div class="button-box">
+            <div id="btn"></div>
+             <button type="button" class="toggle-btn" onclick="Customer()">Customer</button> -->
+        <!-- <button type="button" class="toggle-btn" onclick="Service()">Service Provider</button>
+        </div> -->
+        <!-- <form action="sign" method="POST">
+            {% csrf_token %}
+
+            <div class="input_form"><input id="username" type="text" name="vUsername" required> <label
+                    for="username">Username</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="vFirst_name" required><label>First name</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="vlast_name" required><label>last name</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="vEmail_ID" required><label>Email ID</label>
+                <br>
+            </div>
+            <div class="input_form"><input id="pswrd1" type="password" name="vPassword" required><label> Create
+                    Password</label>
+                <br>
+            </div> -->
+        <!-- <div class="input_form"><input id="pswrd2" type="password" name="" required><label>Confirm Password</label>
+                <br>
+            </div> -->
+
+        <!-- <input type="submit" value="Submit"> -->
+        </form>
+        <form action="sign" method="POST">
+            {% csrf_token %}
+
+            <div class="input_form"><input type="text" name="cUsername" required><label>Username</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="cFirst_name" required><label>First name</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="clast_name" required><label>last name</label>
+                <br>
+            </div>
+            <div class="input_form"><input type="text" name="cEmail_ID" required><label>Email ID</label>
+                <br>
+            </div>
+            <div class="input_form"><input id="pswrd3" type="password" name="cPassword" required><label> Create
+                    Password</label>
+                <br>
+            </div>
+            <!-- <div class="input_form"><input id="pswrd4" type="password" required><label>Confirm Password</label>
+                <br>
+            </div> -->
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="type_label">Type:</label>
+            <span><input type="radio" name="Type" value="Plumber" id="plum"><label class="radio_label"
+                    for="plum">Plumber</label></span>
+            <span><input type="radio" name="Type" value="Electrition" id="elec"><label class="radio_label"
+                    for="elec">Electrition</label></span>
+            <span><input type="radio" name="Type" value="Carpenter" id="car"><label class="radio_label"
+                    for="car">Carpenter</label></span><br><br> -->
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+</body>
+
+</html>

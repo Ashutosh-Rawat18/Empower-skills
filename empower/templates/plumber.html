@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empower Skills</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'servicepage.css' %}" />
+    <script src="https://kit.fontawesome.com/82db775624.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <img src="{% static 'empower/images/symbol.png' %}" alt="Empower skills" />
+                <li class="new"><a href="/">Home</a></li>
+
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <ul class="phela-container">
+        <li>
+            <img class="topic" src="{% static 'empower/images/plumber1.png' %}" alt="plumber1.png" />
+        </li>
+        <li>
+            <p class="desc">
+                Plumbing is any system that conveys fluids for a wide range of applications. Plumbing uses pipes,
+                valves, plumbing fixtures, tanks, and other apparatuses to convey fluids.
+            </p>
+        </li>
+    </ul>
+
+    <ul class="flashcards">
+        <li class="Ashu">
+            <img class="ashushop" src="{% static 'empower/images/Plumbing.png' %}" alt="ashutosh-shop" />
+            <h1 class="nameshop">Horizon Plumbers</h1>
+            <p class="address-shop">
+                A-304 Jay Shree Krishna Darshan,Opp Ritu-Paradise Hatkesh, Mira
+                Road(E), Mira Bhayander 401107
+            </p>
+            <button class="horizonshop">
+                <a href="">
+                    Select
+                </a>
+            </button>
+        </li>
+    </ul>
+
+    <div id="about-us" class="aboutus">
+        <img class="about-img" src="{% static 'empower/images/aboutus.png' %}" alt="about-us" />
+        <p class="para">
+            Empower Skills is a website which allows the customers to meet new
+            service providers and the service providers to find new clients.
+        </p>
+
+    </div>
+
+    <footer class="footer">
+        <p class="copyright">Copyrights &copy; Empower Skills</p>
+    </footer>
+</body>
+
+</html>

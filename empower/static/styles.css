@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Akshar&family=Montserrat&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+.nav_links li,
+a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px, 10%;
+  background-color: black;
+}
+
+.nav_links {
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+}
+.nav_links li {
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 50px;
+
+  background-color: black;
+}
+
+.nav_links {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li:hover {
+  background-color: #1db954;
+}
+
+
+
+.user {
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  padding-right: 50px;
+  color: white;
+}
+.user:hover {
+  color: #1db954;
+}
+
+img {
+  height: 50px;
+  width: 160px;
+  padding-right: 50px;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.working {
+  opacity: 90%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  border-radius: 0%;
+}
+
+.top {
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  width: 50px;
+  height: 30px;
+  border-radius: 20%;
+  background: #282c35;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 15px;
+  color: black;
+}
+
+/*              ######   FLASHCARDS ######                 */
+
+ul{
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0 50px;
+  margin-left: 20px;
+}
+
+.carpenter {
+  height: 200px;
+  width: 200px;
+  background-color: #8fbdd3;
+  text-decoration: none;
+  padding-left: 50px;
+  
+  transition: all 0.2s ease-in-out;
+}
+.carpenter:hover {
+  transform: scale(1.1);
+}
+
+.carpenter:hover {
+  background-color: #1db954;
+}
+.cards-services {
+  position: relative;
+  left: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 200px;
+  background-color: #8fbdd3;
+  color: black;
+  font-family: "Akshar", sans-serif;
+
+  font-size: 30px;
+}
+
+.plumber {
+  height: 200px;
+  width: 200px;
+  background-color: #8fbdd3;
+  text-decoration: none;
+  padding-left: 50px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.plumber:hover {
+  transform: scale(1.1);
+}
+
+.plumber:hover {
+  background-color: #1db954;
+}
+
+.electrician {
+  height: 200px;
+  width: 200px;
+  background-color: #8fbdd3;
+  text-decoration: none;
+  padding-left: 50px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.electrician:hover {
+  transform: scale(1.1);
+}
+
+.electrician:hover {
+  background-color: #1db954;
+}
+
+/*         ######  ABOUT US  #######           */
+
+.aboutus {
+  background-color: #a97155;
+  height: 200px;
+  width: 1000px;
+  position: relative;
+
+  left: 150px;
+  display: flex;
+  border-radius: 50px;
+}
+
+.About-us {
+  height: 40px;
+  width: 500px;
+  position: relative;
+  right: -5px;
+  
+  display: flex;
+  color: #006633;
+  
+}
+
+.para {
+  position: relative;
+  display: flex;
+  top: 40px;
+  right: 200px;
+  
+  font-size: x-large;
+  font-family: "Akshar", sans-serif;
+}
+.about-img {
+  height: 150px;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-left: 50px;
+}
+.footer {
+  margin-top: 30px;
+
+  background-color: #8fbdd3;
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  left: 500px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  font-family: "Akshar", sans-serif;
+  font-size: 40px bold;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}

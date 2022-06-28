@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empower Skills</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style3.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+
+    <script src="https://kit.fontawesome.com/82db775624.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links"><a href="/">
+                    <img src="{% static 'empower/images/symbol.png' %}" alt="Empower skills" />
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center">
+        <h1>User Details</h1>
+        <form action="editprof2" method="POST">
+            {% csrf_token %}
+            <div class="label-data">
+                <div class="label">Username</div>
+                <li>{{user.username}}</li>
+            </div>
+            <div class="label-data">
+                <div class="label">Firstname</div>
+                <li>{{user.first_name}}</li>
+            </div>
+            <div class="label-data">
+                <div class="label">Lastname</div>
+                <li>{{user.last_name}}</li>
+            </div>
+            <div class="label-data">
+                <div class="label">Email Id</div>
+                <input class="text" type="email" name="email" required>
+            </div>
+            <div class="label-data">
+                <div class="label">Shop name</div>
+                <input class="text" type="text" name="proShop_name" required>
+            </div>
+            <div class="label-data">
+                <div class="label">Shop Address</div>
+                <input class="text" type="text" name="proShop_address" required>
+            </div>
+            <div class="label-data">
+                <div class="label">Phone No.</div>
+                <input class="text" type="text" name="proShop_number" required>
+            </div>
+            <div class="label-data">
+                <div class="label">Service</div>
+                <input class="text" type="text" name="proShop_service" required>
+            </div>
+
+        </form>
+        <img id="img" src="/static/empower/images/user.png">
+        <a href="edit/prof">
+            <input type="submit" value="Save"></a>
+    </div>
+</body>
+
+</html>

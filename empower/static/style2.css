@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(185deg,#066aad,#18d8d848, #066aad);
+    height: 100vh;
+}
+.center{
+   width: 500px;
+   height: 420px;
+   position: relative;
+   margin: 6% auto;
+   background: #ffffff;
+   padding : 5px;
+   border-radius: 30px;
+   box-shadow: 0 0 20px 9px #2691d9;
+   overflow: hidden;
+}
+.center h1{
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+}
+.center .button-box{
+    margin: 35px auto;
+    width:350px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #2691d9;
+    border-radius: 30px;
+}
+.center .toggle-btn{
+    color:rgb(3, 21, 124);
+    padding: 15px 45px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width:50%;
+    height:100%;
+    border-radius: 30px;
+    transition: .5s;
+    background: linear-gradient( to left,#18d8d860, #066aadbd);
+}
+.input_form{
+    position: relative;
+    padding: 0 25px;
+    width: 400px;
+    box-sizing: border-box;
+    border-bottom: 2px ;
+    margin: 35px 35px;
+    }
+    
+    .input_form input{
+        top: 0;
+        left: -50px;
+        width: 100%;
+        border-right: 0;
+        border-top: 0;
+        border-left: 0;
+        border-bottom: 2px solid #adadad;
+        padding: 0;
+        height: 20px;
+        font-size: 13px;
+        background: transparent;
+        outline: none;
+       
+    }
+    .input_form label{
+        position:absolute;
+        top: 50%;
+        left: 25px;
+        padding: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 14px;
+        color: #adadad;
+    }
+    
+    .input_form input:focus ~ label,
+    .input_form input:valid ~ label{
+        top: -75%;
+        color:#2691d9;
+        
+    }
+    .input_form input:focus{
+        border-bottom:  2px solid #2691d9;
+        transition: .5s  ease-in-out;
+    }
+     
+    
+    .radio_label {
+        color: #adadad;
+        transition: .5s;
+    }
+
+    input[type="radio"]:checked ~ .radio_label{
+        color: #2691d9;
+    }
+    .type_label{
+        color: #2691d9;
+    }
+
+    input[type="submit"]{
+       margin-left: 140px;
+        width: 200px;
+        height: 40px;
+        border: 1px solid;
+        background: #0b67a5;
+        border-radius: 25px;
+        font-size: 16px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+    }
+    input[type="submit"]:hover{
+        background: #2691d9;
+        transition:.5s;
+    }
+    #customer{
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        transition: .5s all ease;
+    }
+    #service{
+        position: absolute;
+        left: 570px;
+        top: 150px;
+        transition: .5s all ease;
+    }
